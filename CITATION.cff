@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use or refer to this work, please cite it as below."
+type: software
+title: "Importance Sampling via Girsanov's Theorem: Variance Reduction for Out-of-the-Money Options under Black-Scholes"
+abstract: >-
+  Monte Carlo pricing of out-of-the-money European calls and cash-or-nothing
+  digital calls under Black-Scholes by importance sampling: the samples are
+  drawn under a measure that adds a constant drift to the Brownian motion, and
+  each of them is weighted by the Girsanov likelihood ratio. A note in LaTeX
+  with the derivations, the results and the limits of the method, together
+  with a Python package, its tests and a single script that reproduces every
+  figure and the table of the note.
+authors:
+  - family-names: "Cepeda Rocandio"
+    given-names: "Roberto"
+    affiliation: "University of Oviedo"
+version: 1.0.0
+date-released: 2026-11-15
+repository-code: "https://github.com/indexxxxbraker/girsanov-importance-sampling"
+license:
+  - MIT
+  - CC-BY-4.0
+keywords:
+  - importance sampling
+  - Monte Carlo
+  - variance reduction
+  - change of measure
+  - Girsanov's theorem
+  - Black-Scholes
+  - option pricing
