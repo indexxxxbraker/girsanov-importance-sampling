@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "girsanov-is"
+version = "1.0.0"
+description = "Importance sampling via Girsanov's theorem for out-of-the-money options under Black-Scholes"
+readme = "README.md"
+authors = [{ name = "Roberto Cepeda Rocandio" }]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.22",
+    "scipy>=1.8",
+    "matplotlib>=3.5",
+]
+
+[project.urls]
+Repository = "https://github.com/indexxxxbraker/girsanov-importance-sampling"
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]   # so that the tests can import ``experiments`` from the root
+addopts = "-ra"
